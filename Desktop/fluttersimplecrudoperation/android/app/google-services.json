@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "627879543925",
+    "project_id": "mystudentgpa",
+    "storage_bucket": "mystudentgpa.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:627879543925:android:5bfae8040f7e375c18a43c",
+        "android_client_info": {
+          "package_name": "com.example.fluttersimplecrudoperation"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA_JZ2MU_oRKOOf2TQAtxtW5hM-w7CPHUk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
