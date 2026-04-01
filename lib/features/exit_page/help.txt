@@ -1,0 +1,20 @@
+exit/
+├── exit_theme.dart              ← Colors, text styles, ALL dummy data & constants
+├── screens/
+│   ├── exit_form_screen.dart    ← Main orchestrator (step bar, PageView, nav footer)
+│   ├── exit_page_employee_info.dart   ← Step 1: Auto-filled employee info
+│   ├── exit_page_reasons.dart         ← Step 2: Checkbox reasons for leaving
+│   ├── exit_page_ratings.dart         ← Step 3: Star rating per aspect (18 rows)
+│   ├── exit_page_feedback.dart        ← Step 4: 8 open-ended text areas
+│   └── exit_page_signature.dart       ← Step 5: Signature + success view
+└── widgets/
+    └── exit_widgets.dart        ← All shared widgets
+
+
+
+
+🧩 Key Widgets Built
+exit_widgets.dart contains everything reusable: ExitAppHeader, ExitStepBar (animated dots), ExitSectionHeader, ExitCard, ExitReadOnlyField, ExitAutoFilledBadge, ExitCheckItem (animated checkboxes), ExitStarRatingRow (tappable stars), ExitFeedbackBlock, ExitSignatureArea, ExitNavFooter, ExitToast, and ExitSuccessView.
+
+⚡ What the orchestrator handles
+exit_form_screen.dart owns all state and coordinates everything — step progression, PageView with NeverScrollableScrollPhysics (swipe disabled, nav-only), validation (at least one reason required, signature required before submit), the animated toast, the loading spinner on submit, and the _buildPayload() method that already structures everything for your API.
